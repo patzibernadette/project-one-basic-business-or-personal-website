@@ -1,8 +1,61 @@
+:root {
+    --color-a: #F7F8F9;
+    --color-b: #7AB8B6;
+    --color-c: #2D4A6B;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+    margin: 2.0;
+    padding: 2.0;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #7AB8B6;
 }
 
 h1 {
-    
+    font-family: "Sans-serif";
+    color: #F7F8F9;
+}
+
+h2,h3{
+    font-family: "sans-serif";
+    color: #2D4A6B 
+}
+
+nav{
+    height: 4.0rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+nav a{
+    font-family: "sans-serif";
+    color: #F7F8F9;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+
+}
+
+p{
+    color:var(--color-a);
+}
+.van-portrait {
+    height: 350px;
+    border-radius: 20%;
+}
+aside section {
+    border: solid 2.5px;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+aside h2 {
+    background-color: var(--color-c);
+    color: var(--color-a)
+    margin-top: 0;
+    padding: 0.5em;
+
 }

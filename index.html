@@ -7,14 +7,70 @@
     <link rel="stylesheet" href="./css/site.css"/>
 </head>
 <body>
-    <nav>
+
+  <nav>
       <a href="./about-us.html">About Us</a> 
       <a href="./contact-us.html">Contact Us</a>
-    </nav>
-    <h1>Spotless Cleaning Services LLC</h1>
-    <img src="./Images/spotless-cleaning-services-llc-van.PNG" alt="Spotless-Cleaning-Services-LLC-Van" height="350"/>
-    <h2>Quality Cleaning For Your Home or Business</h2>
-    <p>At Spotless CLeaning Services, we pride ourselves on delivering best of best cleaning, tailored to meet the needs of both residential and commercial clients in your area.
+  </nav>
+
+  <div class="content">
+     <main>
+      <h1>Spotless Cleaning Services LLC</h1>
+      <img class="van-portrait" src="./Images/spotless-cleaning-services-llc-van.PNG" alt="Spotless-Cleaning-Services-LLC-Van"/>
+      <h2>Quality Cleaning For Your Home or Business</h2>
+      <p>At Spotless Cleaning Services, we pride ourselves on delivering best of best cleaning, tailored to meet the needs of both residential and commercial clients in your area.
        Our commitment to quality, professionalism, and affordability sets us apart in the cleaning industry.</p>
+
+  </main>
+   
+  <aside>
+    <section>
+       <div>
+          <h3>Schedule an Appointment for a Free Quote</h3>
+        </div>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="Name" id="Name"/>
+        <div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="Numbers" name="phone" id="phone"/>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email"/>
+        </div>
+        <div>
+          <label for="Address">Address</label>
+          <input type="Address" name="Address" id="Address"/>
+          <label for="City">City</label>
+          <input type="City" name="City" id="City"/>
+          <label for="Zip">Zip</label>
+          <input type="Zip" name="Zip" id="Zip"/>
+        </div>
+        <div>
+          <label for="Date">Date</label>
+          <input type="Date" name="Date" id="Date"/>
+          <label for="Time">Time</label>
+            <select  id="Time" name="Time">  
+             <option value="0">7:30-7:45AM</option>
+             <option value="5">8:30-8:45AM</option>
+             <option value="10">9:30-9:45AM</option>
+             <option value="15">10:30-10:45AM</option>
+             <option value="20">11:30-11:45AM</option>
+             <option value="25">12:30-12:45PM</option>
+             <option value="30">1:30-1:45PM</option>
+             <option value="35">2:30-2:45PM</option>
+             <option value="40">3:30-3:45PM</option>
+        </select>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+         <button>Send</button>
+    </section>
+  </aside>
+  </div>
+
 </body>
 </html>

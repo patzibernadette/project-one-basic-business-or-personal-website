@@ -1,61 +1,28 @@
 :root {
-    --color-a: #F7F8F9;
-    --color-b: #7AB8B6;
-    --color-c: #2D4A6B;
+    --color-a: #7AB8B6;
+    --color-b: #2D4A6B;
+    --color-c: #F7F8F9;
+    --color-d: #000;
 }
 
 body {
-    margin: 2.0;
-    padding: 2.0;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #7AB8B6;
+    margin: 0;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: var(--color-a);
 }
 
-h1 {
-    font-family: "Sans-serif";
-    color: #F7F8F9;
-}
-
-h2,h3{
-    font-family: "sans-serif";
-    color: #2D4A6B 
-}
-
-nav{
-    height: 4.0rem;
+nav {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content:space-around;
+    height: 3.50rem;
 }
-nav a{
-    font-family: "sans-serif";
-    color: #F7F8F9;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.content{
-    display: flex;
-
+nav a {
+    color:var(--color-c);
+    text-decoration:none; 
 }
 
-p{
-    color:var(--color-a);
-}
-.van-portrait {
-    height: 350px;
-    border-radius: 20%;
-}
-aside section {
-    border: solid 2.5px;
-    border-radius: 0.5em;
-    margin-bottom: 1em;
-}
-aside h2 {
-    background-color: var(--color-c);
-    color: var(--color-a)
-    margin-top: 0;
-    padding: 0.5em;
-
+.content {
+    display:flex;
 }

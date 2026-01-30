@@ -26,3 +26,11 @@ nav a {
 .content {
     display:flex;
 }
+
+h1 {
+    color: var(--color-c)
+}
+
+h2,h3{
+    color:var(--color-b)
+}

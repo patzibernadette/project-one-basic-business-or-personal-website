@@ -8,58 +8,111 @@
     <link rel="stylesheet" href="./css/site.css"/>
 </head>
 <body>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./about-us.html">About Us</a>
-    </nav>
-    <div>
-        
-     <h1>Contact Us</h1>
-    <img src="./Images/ai-generated-cleaning-supplies-and-cart-in-a-modern-office-corridor-photo.jpeg" class="rounded mx-auto d-block" alt="cleaning supplies"/>
-    <p>Once you have submitted for a free quote, you will then be directed to this page where you will leave the information provided and select the type of cleaning of your choice. 
-       Once one of the representatives receives it, they will reach out to schedule when you would like the cleaning done.Get that clean enviornment essential for your health and well-being!</p>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Spotless Cleaning</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about-us.html">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    
-    <form action="GET">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name"/>
-        </div>
-        <div>
-            <label for="phone">Phone</label>
-            <input type="Numbers" name="phone" id="phone"/>
-        <div>
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email"/>
-        </div>
-        <div>
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-        </div>
-         <div>
-            <label for="Choice of Cleaning">Choice of Cleaning</label>
-            <select  id="Choice of Cleanig" name="choice of cleaning">  
-             <option value="0">One Time Deep Clean</option>
-             <option value="5">Monthly</option>
-             <option value="10">Bi-Weekly</option>
-        </select>
-        </div>
-        <button>Send Message</button>
-        
-        
-    </form>
-<footer>
-    <h3>Office Hours</h3>
+  </nav>
+
+ <div class="container-fluid mt-4">  
+      <h1>Contact Us</h1>
+      <img src="./Images/ai-generated-cleaning-supplies-and-cart-in-a-modern-office-corridor-photo.jpeg" class="rounded mx-auto d-block" alt="cleaning supplies" height="300"/>
+ </div>
+ <div class="card mt-4">
+   <div class="card-body">
+    Once you have submitted for a free quote, you will then be directed to this page where you will leave the information provided and select the type of cleaning of your choice. 
+    Once one of the representatives receives it, they will reach out to schedule when you would like the cleaning done.Get that clean enviornment essential for your health and well-being!
+   </div>
+ </div> 
+ <section class="container-fluid mt-4">
+    <div class="card">
+      <div class="card-header  text-bg-dark">
+        Booking Appointment 
+      </div>
+      <div class="card-body">
+        <form class="container-fluid">
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+              <label for="name" class="col-form-label">Name</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" class="form-control" name="Name" id="name">
+            </div>
+          </div>
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+              <label for="phone" class="col-form-label">Phone</label>
+            </div>
+            <div class="col-auto">
+             <input type="tel" class="form-control" name="phone" id="phone">
+            </div>
+          </div>      
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+             <label for="email" class="col-form-label">Email Address</label>
+            </div>
+            <div class="col-auto">
+             <input type="email" class="form-control" name="email" id="email"> 
+            </div>
+          </div>      
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+             <label for="message" class="col-form-label">Message</label>
+            </div>
+            <div class="col-auto">
+             <input type="text" class="form-control" name="message" id="message"> 
+            </div>
+          </div>       
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+             <label for="choice of cleanign" class="col-form-label">Choice of Cleaning</label>
+            </div>
+            <div class="col-auto">
+             <select class="col-form-select" name="choice of cleaning" id="choice of cleaning" aria-label="Appointment Time Selector">
+               <option value="0">One Time Deep Clean</option>
+               <option value="5">Monthly</option>
+               <option value="10">Bi-Weekly</option>
+             </select>
+            </div>
+          </div>      
+                  
+           <button class="btn btn-dark">Send</button>
+        </div>  
+      </div>
+    </div>    
+  </section>
+
+
+<footer class="container-fluid mt-5">
+  <h3>Office Hours</h3>
     <ul>
         <li>Monday-Friday:7:30am-3:30pm</li>
         <li>Saturday:Closed</li>
         <li>Sunday:Closed</li>
         <li>Holidays:Closed</li>
     </ul>
-
-
     Copyright &copy; 2026
-
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

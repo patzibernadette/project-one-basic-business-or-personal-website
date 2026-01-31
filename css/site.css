@@ -37,10 +37,6 @@ nav a {
     text-decoration:none; 
 }
 
-.content {
-    /*display:flex;*/
-}
-
 h1,h3 {
     color: var(--color-c)
 }

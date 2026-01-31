@@ -1,81 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/site.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/site.css" />
 </head>
+
 <body>
-
-    <nav>
-      <a href="./about-us.html">About Us</a> 
-      <a href="./contact-us.html">Contact Us</a>
-  </nav>
- <div class="content">
-    <main>
-    <h1>Welcome to Spotless Cleaning Services LLC</h1>
-  <img src="./Images/spotless-cleaning-services-llc-van.PNG" class="rounded mx-auto d-block" alt="spotless-cleaning-services-llc-van" height="250"/>
-       <h2>Quality Cleaning For Your Home or Business</h2>
-       <p>At Spotless Cleaning Services, we pride ourselves on delivering best of best cleaning, tailored to meet the needs of both residential and commercial clients in your area.
-       Our commitment to quality, professionalism, and affordability sets us apart in the cleaning industry.</p>
-     </main>
-    </div>
-    
-  <aside>
-    <section>
-       <div>
-          <h3>Schedule an Appointment for a Free Quote</h3>
-        </div>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" name="Name" id="Name"/>
-        <div>
-        <div>
-          <label for="phone">Phone</label>
-          <input type="Numbers" name="phone" id="phone"/>
-        <div>
-          <label for="email">Email Address</label>
-          <input type="email" name="email" id="email"/>
-        </div>
-        <div>
-          <label for="Address">Address</label>
-          <input type="Address" name="Address" id="Address"/>
-          <label for="City">City</label>
-          <input type="City" name="City" id="City"/>
-          <label for="Zip">Zip</label>
-          <input type="Zip" name="Zip" id="Zip"/>
-        </div>
-        <div>
-          <label for="Date">Date</label>
-          <input type="Date" name="Date" id="Date"/>
-          <label for="Time">Time</label>
-            <select  id="Time" name="Time">  
-             <option value="0">7:30-7:45AM</option>
-             <option value="5">8:30-8:45AM</option>
-             <option value="10">9:30-9:45AM</option>
-             <option value="15">10:30-10:45AM</option>
-             <option value="20">11:30-11:45AM</option>
-             <option value="25">12:30-12:45PM</option>
-             <option value="30">1:30-1:45PM</option>
-             <option value="35">2:30-2:45PM</option>
-             <option value="40">3:30-3:45PM</option>
-        </select>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Spotless Cleaning</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-         <button>Send</button>
-    </section>
-  </aside>
-  </div>
+    </div>
+  </nav>
 
+  <main class="container-fluid content">
+    <h1>Welcome to Spotless Cleaning Services LLC</h1>
+    <img src="./Images/spotless-cleaning-services-llc-van.PNG" class="rounded mx-auto d-block"
+         alt="spotless-cleaning-services-llc-van" height="250" />
+    <h2>Quality Cleaning For Your Home or Business</h2>
+    <p>At Spotless Cleaning Services, we pride ourselves on delivering best of best cleaning, tailored to meet the
+      needs of both residential and commercial clients in your area.
+      Our commitment to quality, professionalism, and affordability sets us apart in the cleaning industry.</p>
+  </main>
 
+  <section class="container-fluid">
+    <div class="card">
+      <div class="card-header  text-bg-primary">
+        Schedule an Appointment for a Free Quote
+      </div>
+      <div class="card-body">
+        <form class="container-fluid">
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+              <label for="name" class="col-form-label">Name</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" class="form-control" name="Name" id="name">
+            </div>
+          </div>
+          <div class="row mb-1 align-items-center">
+            <div class="col-auto">
+              <label for="phone" class="col-form-label">Phone</label>
+            </div>
+            <div class="col-auto">
+            <input type="tel" class="form-control" name="phone" id="phone">
+            </div>
+          </div>      
+          <!--
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email" id="email">
+          </div>      
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" id="address">
+          </div>      
+          <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" name="city" id="city">
+          </div>      
+          <div class="mb-3">
+            <label for="state" class="form-label">State</label>
+            <input type="text" class="form-control" name="state" id="state">
+          </div>      
+          <div class="mb-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="number" class="form-control" name="zip" id="zip">
+          </div>      
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" name="date" id="date">
+          </div>      
+          <div class="mb-3">
+            <label for="time" class="form-label">Time</label>
+            <select class="form-select" name="time" id="time" aria-label="Appointment Time Selector">
+              <option value="0">7:30-7:45AM</option>
+              <option value="5">8:30-8:45AM</option>
+              <option value="10">9:30-9:45AM</option>
+              <option value="15">10:30-10:45AM</option>
+              <option value="20">11:30-11:45AM</option>
+              <option value="25">12:30-12:45PM</option>
+              <option value="30">1:30-1:45PM</option>
+              <option value="35">2:30-2:45PM</option>
+              <option value="40">3:30-3:45PM</option>
+            </select>
+          </div>      
+          -->          
+          <button class="btn btn-primary">Send</button>
+        </div>  
+      </div>
+    </div>    
+  </section>
 
- <footer>
+  <footer class="container-fluid mt-3">
     Copyright &copy; 2026
- </footer>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

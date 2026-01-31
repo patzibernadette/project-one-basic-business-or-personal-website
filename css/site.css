@@ -1,8 +1,11 @@
 :root {
-    --color-a: #7AB8B6;
-    --color-b: #2D4A6B;
-    --color-c: #F7F8F9;
-    --color-d: #000;
+  --color-a: #7AB8B6;
+  --color-b: #2D4A6B;
+  --color-c: #F7F8F9;
+  --color-d: #000;
+  --background-accent-color: var(--color-b);
+  --background-text-color: var(--color-c);
+  --background-text-active-color: var(--color-a);
 }
 
 body {
@@ -13,11 +16,21 @@ body {
 }
 
 nav {
-    background-color: var(--color-b);
+    background-color: var(--background-accent-color);
+    color: var(--background-text-color);
     display: flex;
     align-items:center;
     justify-content:space-around;
     height: 3.50rem;
+}
+.navbar-brand {
+  color: var(--background-text-color);
+}
+.nav-link {
+  color: var(--background-text-color);
+}
+.navbar-nav .nav-link.active {
+  color: var(--background-text-active-color);
 }
 nav a {
     color:var(--color-c);
@@ -25,7 +38,7 @@ nav a {
 }
 
 .content {
-    display:flex;
+    /*display:flex;*/
 }
 
 h1,h3 {
@@ -37,5 +50,7 @@ h2{
 }
 
 footer {
-    background-color: var(--color-b);
+  background-color: var(--background-accent-color);
+  color: var(--background-text-color);
+  padding: 0.5rem;
 }

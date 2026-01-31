@@ -34,7 +34,7 @@ nav {
 }
 nav a {
     color:var(--color-c);
-    text-decoration:none; 
+    text-decoration: none; 
 }
 
 h1,h3 {
@@ -50,3 +50,4 @@ footer {
   color: var(--background-text-color);
   padding: 0.5rem;
 }
+
